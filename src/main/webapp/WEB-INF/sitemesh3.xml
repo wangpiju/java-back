@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<!-- 后台页  -->
+	<mapping decorator="/WEB-INF/jsp/easyui/layout.jsp" path="/admin/*/*" />
+	
+	
+<!-- 	<content-processor> -->
+<!-- 		<tag-rule-bundle class="com.hs3admin.web.utils.ExtHtmlTagRuleBundle" /> -->
+<!-- 	</content-processor> -->
+</sitemesh>

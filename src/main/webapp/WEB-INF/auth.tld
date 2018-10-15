@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+    <description>当前用户权限认证标签库</description> 
+    <tlib-version>1.0</tlib-version> 
+    <short-name>sjc</short-name> 
+    <uri>http://www.sjc168.com</uri>
+  <tag>
+    <name>auth</name>
+    <tag-class>com.tag.AuthPermissionTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <name>url</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  <tag>
+    <name>authGroup</name>
+    <tag-class>com.tag.AuthGroupPermissionTag</tag-class>
+    <body-content>scriptless</body-content>
+    <attribute>
+        <name>element</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <name>elementAttr</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+</taglib>
